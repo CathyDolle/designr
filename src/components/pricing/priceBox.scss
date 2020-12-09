@@ -1,0 +1,46 @@
+.priceBox {
+  margin: 0 20px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  background: white;
+  height: 400px;
+  box-shadow: 1px 8px 32px -2px rgba(0, 0, 0, 0.1);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .infoContainer {
+    h3 {
+      font-family: "Neue Montreal Regular";
+      font-size: 3rem;
+    }
+    span {
+      font-family: "Neue Montreal Regular";
+      font-size: 5rem;
+    }
+    .priceContainer {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  h4 {
+    font-family: "Neue Montreal Regular";
+    font-size: 1.8rem;
+    margin: 0 0 0.6rem 0.5rem;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    background: black;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

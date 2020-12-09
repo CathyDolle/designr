@@ -1,0 +1,29 @@
+.pricingContainer {
+  width: 100%;
+  padding: var(--marginPadding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .selectSection {
+    margin: var(--marginPadding) 0;
+    button {
+      width: 100px;
+      border-radius: 3px;
+      height: 35px;
+      background: transparent;
+      border: none;
+      margin: 0 20px;
+      outline: none;
+      cursor: pointer;
+      &.active {
+        border: solid 1px black;
+      }
+    }
+  }
+  .priceSection{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+}

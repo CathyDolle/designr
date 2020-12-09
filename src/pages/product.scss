@@ -1,0 +1,105 @@
+/******************************
+PREVIEW
+*******************************/
+.previewContainer {
+  width: 100%;
+  height: var(--productContainerHeight);
+  background: black;
+  display: flex;
+  align-items: center;
+  padding: var(--marginPadding);
+  img {
+    height: 80%;
+  }
+  h1 {
+    position: absolute;
+    right: calc(var(--marginPadding) + 50px);
+    color: white;
+    font-size: 18rem;
+    font-family: "Neue Montreal Light";
+    text-align: right;
+    margin-bottom: 200px;
+  }
+  .linkContent {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50px;
+    height: 80%;
+    a {
+      color: var(--sandColor);
+      font-size: 2rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+/******************************
+PRODUCT PRESENTATION
+*******************************/
+
+.presentationContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: var(--productContainerHeight);
+  padding: var(--marginPadding);
+  p {
+    margin: 20px 0px;
+    width: 50%;
+  }
+  button {
+    margin-top: 20px;
+    border-radius: 2px;
+    width: 130px;
+    height: 45px;
+    background: white;
+    border: solid 1px black;
+    outline: none;
+  }
+  img {
+    position: absolute;
+    &.duo {
+      top: 5%;
+      right: 0;
+      height: 120%;
+    }
+    &.solo {
+      height: 60%;
+      bottom: -35%;
+      left: 0;
+    }
+  }
+}
+
+/******************************
+CLIENT CONATAINER 
+*******************************/
+
+.clientContainer {
+  width: 100%;
+  height: var(--productContainerHeight);
+  padding: var(--marginPadding);
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  .boxContainer{
+    display: flex;
+    .clientBox {
+      padding: 40px;
+      width: 450px;
+      height: 400px;
+      margin: 60px 30px;
+      height: 300px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 1px 8px 32px -2px rgba(0, 0, 0, 0.246);
+      h3{
+        font-family: 'Neue Montreal Regular';
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/******************************
+FONTS
+*******************************/
+
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: url("../assets/fonts/NeueMontreal-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("../assets/fonts/NeueMontreal-Regular.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal Light";
+  src: url("../assets/fonts/NeueMontreal-Light.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/******************************
+BASE
+*******************************/
+
+:root {
+  // colors
+  --bgColor: #f7f4eb;
+  --fontColor: black;
+  --sandColor: #C8B28B;
+  // font size
+  --titleSize: 5.5rem;
+  --subtitleSize: 4rem;
+  --headlineSize: 3rem;
+  --linkSize: 1.4rem;
+  --fontSize: 1.6rem;
+  // padding
+  --marginPadding: 80px;
+  // height
+  --headerHeight: 150px;
+  --productContainerHeight: 700px;
+}
+
+/******************************
+TYPOGRAPHY
+*******************************/
+h1 {
+  font-family: "Neue Montreal Regular";
+  font-size: var(--titleSize);
+}
+
+h2 {
+  font-family: "Neue Montreal Regular";
+  font-size: var(--subtitleSize);
+}
+
+h3 {
+  font-family: "Neue Montreal Light";
+  font-size: var(--headlineSize);
+}
+
+
+a {
+  font-family: "Neue Montreal Regular";
+  text-decoration: none;
+  color: var(--fontColor);
+  font-size: var(--linkSize);
+}
+
+p {
+  font-family: "Neue Montreal Regular";
+  font-size: var(--fontSize);
+  line-height: 2.4rem;
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import './wrapper.scss'
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/img/logo.svg'
+import Logo from './Logo'
 
 const Header = () => {
   return (
     <header>
-      <img src={logo} alt="logo"/>
+      <Logo/>
       <nav>
         <NavLink exact to="/">Products</NavLink>
         <span>•</span>

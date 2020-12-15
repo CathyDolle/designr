@@ -1,46 +1,56 @@
 import React from 'react';
 import Wrapper from '../components/wrapper/Wrapper'
 import './product.scss'
-import preview from '../assets/img/product/preview.png'
-import bgDuo from '../assets/img/product/bgDuo.png'
+import PresentationSection from '../components/product/PresentationSection'
+import PresentationSectionInverse from '../components/product/PresentationSectionInverse'
+// img
 import bg from '../assets/img/product/bg.png'
+import house from '../assets/img/product/house.png'
+import design from '../assets/img/product/design.png'
+import ui from '../assets/img/product/ui.png'
+import typo from '../assets/img/product/typo.gif'
+import images from '../assets/img/product/images.png'
+import colors from '../assets/img/product/colors.png'
 
 const Product = () => {
   return (
     <Wrapper>
-      {/* PREVIEW */}
-      <div className="previewContainer">
-        <img src={preview} alt="preview"/>
-        <h1>Design of <br/>the day</h1>
-        <div className="linkContent">
-          <a href="/">Discover</a>
+      {/* Intro */}
+      <section className="introContainer">
+        <div className="textContainer">
+          <h1>A better way to <br/> create a website</h1>
+          <p>DesignR is one of the best tool that any designer or developer can use.  Browse our collection, find the Mixx you like and use it for your design or website. Easily and instantly download every element of each Mixx, including: <span>images</span>, <span>typography</span> and <span>colors</span> Simple and Efficent that’s DesignR.</p>
+          <button>Get Started</button>
         </div>
-      </div>
+        <div className="visualContainer">
+          <img src={bg} alt="bg"/>
+        </div>
+      </section>
+      {/* wave */}
+      <svg viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,96C480,96,600,128,720,160C840,192,960,224,1080,218.7C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
-      {/* PRESENTATION */}
-      <div className="presentationContainer">
-        <h1>Our collection <br/>For your projects.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna ut egestas at. Massa ut eu suspendisse eget. Tempor ultricies eget nunc enim platea eu ullamcorper. Convallis ultrices elit massa interdum elit eu. Massa lacus leo adipiscing felis tortor. Blandit nisl, id adipiscing lacus, tortor iaculis molestie mauris sed. Elementum feugiat non ullamcorper fermentum. Nisi ac metus hac id ut sed vel arcu, venenatis.</p>
-        <button>Discover</button>
-        <img className="duo" src={bgDuo} alt="bgDuo"/>
-        <img className="solo" src={bg} alt="bg"/>
-      </div>
+      {/* Presentation Container */}
+      <section className="presentationContainer">
+        {/* presentations */}
+        <PresentationSection title="Get your enterprise-grade web design" text="Give an access for your team to improve their creativity and design vision. All you need to create your own vision online" visual={house} to="/Pricing" link="See plans and pricing"/>
+        <div className="tripleTextSection">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia, magni quam culpa error, blanditiis dolor ex maxime quod recusandae, modi rem? In recusandae quasi non, quae quisquam magni molestiae?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia, magni quam culpa error, blanditiis dolor ex maxime quod recusandae, modi rem? In recusandae quasi non, quae quisquam magni molestiae?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officia, magni quam culpa error, blanditiis dolor ex maxime quod recusandae, modi rem? In recusandae quasi non, quae quisquam magni molestiae?</p>
+        </div>
+        <PresentationSection title="Easy components, easy design." text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." visual={design}/>
+        <PresentationSectionInverse title="Complete Figma 
+        UI Kit" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={ui}/>
+         <PresentationSection title="Easy components, easy developement." text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." visual={design}/>
+         <PresentationSectionInverse title="Complete React library" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={ui}/>
 
-      {/* WORKS */}
-      <div className="clientContainer">
-        <h2>But how does it work ?</h2>
-        <h3>are you a...</h3>
-        <div className="boxContainer">
-        <div className="clientBox">
-          <h3>DesigneR?</h3>
-          <p>Choose your Mixx from our gallery. And click on "Download the figma file". You will have access to  each files of the project. Our HD images, colors and typography are all yours.</p>
-        </div>
-        <div className="clientBox">
-          <h3>DevelopeR?</h3>
-          <p>Choose your Mixx from our gallery. And click on "Download the component file". You will have access to  each files of the project. Our HD images, colors and typography are all yours.</p>
-        </div>
-        </div>
-      </div>
+         {/* INSIDE THE PRODUCT */}
+         <h1 class="bigTitle">Whats inside ?</h1>
+         <PresentationSectionInverse title="Typography" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={typo}/>
+         <PresentationSection title="Images" text="Give an access for your team to improve their creativity and design vision. All you need to create your own vision online" visual={images} to="/Pricing" link="See plans and pricing"/>
+         <PresentationSectionInverse title="Colors" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={colors}/>
+      </section>
+
     </Wrapper>
   );
 };

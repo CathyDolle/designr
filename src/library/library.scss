@@ -26,6 +26,17 @@ FONTS
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'MAZIUS REVIEW 20.09';
+  src: url('../assets/fonts/MAZIUSREVIEW2009-Regular.woff2') format('woff2'),
+      url('../assets/fonts/MAZIUSREVIEW2009-Regular.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 /******************************
 BASE
 *******************************/
@@ -52,7 +63,7 @@ BASE
 TYPOGRAPHY
 *******************************/
 h1 {
-  font-family: "Neue Montreal Regular";
+  font-family: "MAZIUS REVIEW 20.09";
   font-size: var(--titleSize);
 }
 
@@ -78,4 +89,8 @@ p {
   font-family: "Neue Montreal Regular";
   font-size: var(--fontSize);
   line-height: 2.4rem;
+  font-weight: 100;
 }
+
+
+

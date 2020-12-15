@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <FooterLink exact path="/" name="Our Products"/>
-      <FooterLink path="/Inspirations" name="Design Inspirations"/>
+      <FooterLink path="/Inspirations" name="Collection"/>
       <FooterLink border="borderBottom" path="/Pricing" name="Pricing"/>
       <div className="demiBox left">
         <img src={logo} alt="logo"/>

@@ -20,10 +20,30 @@
       }
     }
   }
-  .priceSection{
+  .priceSection {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 100px;
   }
+}
+
+.offerContainer {
+  margin-top: -20px;
+  background: black;
+  padding: 0 var(--marginPadding) 20rem var(--marginPadding);
+  span {
+    color: white;
+    font-size: 10rem;
+  }
+  p{
+    color: white;
+  }
+}
+
+.offerSection{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+  padding-right: 100px;
 }

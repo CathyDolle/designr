@@ -1,0 +1,29 @@
+.offerSectionContent{
+  .titleContent{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    h2{
+      color: white;
+      font-size: 2.6rem;
+    }
+    img{
+      width: 40px;
+      margin-right: 2rem;
+    }
+  }
+  .offerSectionContent{
+    margin-left: calc(50px);
+    display: flex;
+    flex-direction: column;
+    p{
+      margin-left: 1rem;
+      color: white;
+    }
+    .offerName{
+      width: calc(100% + 50px);
+      display: flex;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

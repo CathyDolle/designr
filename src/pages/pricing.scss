@@ -24,10 +24,12 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 
 .offerContainer {
+  width: 100%;
   margin-top: -20px;
   background: black;
   padding: 0 var(--marginPadding) 20rem var(--marginPadding);

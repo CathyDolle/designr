@@ -27,7 +27,7 @@ const Product = () => {
         </div>
       </section>
       {/* wave */}
-      <svg viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,96C480,96,600,128,720,160C840,192,960,224,1080,218.7C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      <svg className="wave" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,96C480,96,600,128,720,160C840,192,960,224,1080,218.7C1200,213,1320,171,1380,149.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
       {/* Presentation Container */}
       <section className="presentationContainer">
@@ -45,7 +45,7 @@ const Product = () => {
          <PresentationSectionInverse title="Complete React library" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={ui}/>
 
          {/* INSIDE THE PRODUCT */}
-         <h1 class="bigTitle">Whats inside ?</h1>
+         <h1 className="bigTitle">Whats inside ?</h1>
          <PresentationSectionInverse title="Typography" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={typo}/>
          <PresentationSection title="Images" text="Give an access for your team to improve their creativity and design vision. All you need to create your own vision online" visual={images} to="/Pricing" link="See plans and pricing"/>
          <PresentationSectionInverse title="Colors" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." to="/Inspirations" link="Download trial UI kit " visual={colors}/>

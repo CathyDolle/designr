@@ -8,13 +8,13 @@ const Header = () => {
     <header>
       <Logo/>
       <nav>
-        <NavLink exact to="/">Products</NavLink>
-        <span>•</span>
-        <NavLink to="/Inspirations">Inspirations</NavLink>
-        <span>•</span>
-        <NavLink to="/Pricing">Pricing</NavLink>
+        <NavLink className="navLink" to="/Inspirations">Collection</NavLink>
+        <NavLink className="navLink" to="/Pricing">About us</NavLink>
+        <NavLink className="navLink" to="/Pricing">Pricing</NavLink>
+        <NavLink className="navLink" to="/login">Login</NavLink>
+        <button className="learn">Learn more</button>
+        <button><NavLink to="/inscription">Get started</NavLink></button>
       </nav>
-      <button>Login</button>
     </header>
   );
 };

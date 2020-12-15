@@ -2,6 +2,8 @@ import Product from './pages/Product';
 import ProductRead from './pages/ProductRead';
 import Inspirations from './pages/Inspirations';
 import Pricing from './pages/Pricing';
+import Login from './pages/Login';
+import Inscription from './pages/Inscription';
 
 const routes = [
     {
@@ -23,6 +25,16 @@ const routes = [
         path: "/pricing",
         name: "Pricing",
         component: Pricing,
+    },
+    {
+        path: "/login",
+        name: "Login",
+        component: Login,
+    },
+    {
+        path: "/inscription",
+        name: "Inscription",
+        component: Inscription,
     }
 ]
 

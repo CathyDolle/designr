@@ -4,6 +4,7 @@ import Inspirations from './pages/Inspirations';
 import Pricing from './pages/Pricing';
 import Login from './pages/Login';
 import Inscription from './pages/Inscription';
+import InspirationsItem from './pages/InspirationsItem';
 
 const routes = [
     {
@@ -35,6 +36,11 @@ const routes = [
         path: "/inscription",
         name: "Inscription",
         component: Inscription,
+    },
+    {
+        path: "/inspirationsitem/:id",
+        name: "InspirationsItem",
+        component: InspirationsItem,
     }
 ]
 

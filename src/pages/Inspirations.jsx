@@ -29,6 +29,8 @@ const Inspirations = () => {
         <div className="designContainer">
           <DesignBox/>
           <DesignBox/>
+          <DesignBox/>
+          <DesignBox/>
         </div>
       </div>
     </Wrapper>

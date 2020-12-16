@@ -1,18 +1,20 @@
 import React from 'react';
 import './designBox.scss'
-import preview from '../../assets/img/inspirations/preview.png'
 
-const DesignBox = () => {
+const DesignBox = ({product}) => {
   return (
     <div className="designBox">
-      <img src={preview} alt=""/>
-      <h2>Test</h2>
+      <img src={process.env.REACT_APP_API_URL + product.thumbnail} alt=""/>
+      <h2>{product.name}</h2>
       <div className="tagList">
-        <button className="tag active">Webdesign</button>
-        <button className="tag active">Webdesign</button>
+        <button className="tag active">{product.category}</button>
       </div>
       <div className="colorList">
-        <div className="color"></div>
+        {
+          product.colors.map((color, index) => {
+            return <div className="color" style={{background: color.hexa}} key={index}></div>
+          })
+        }
       </div>
     </div>
   );

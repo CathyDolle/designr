@@ -6,28 +6,28 @@ import './product-read.scss'
 
 const ProductRead = () => {
   const [loading, setLoading] = useState(true)
-  const [data, setData] = useState(null)
+  const [product, setproduct] = useState(null)
 
-  let { id } = useParams()
+  let { name } = useParams()
 
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
       
-      const response = await fetch(`http://localhost:3000/products/${id}`, {
+      const response = await fetch(`http://localhost:3000/api/products/${name}`, {
         // credentials: 'include', Si tu as besoin d'une auth
         method: 'GET',
         mode: 'cors'
       });
-      const data = await response.json()
+      const { statusCode, product } = await response.json()
 
-      console.log(data)
-      setData(data);
+      console.log(statusCode, product)
+      setproduct(product);
       setLoading(false);
     };
 
     getProduct();
-  }, [id]);
+  }, [name]);
 
   return (
     <Wrapper>
@@ -36,8 +36,8 @@ const ProductRead = () => {
         {!loading 
           ? (
             <div>
-              <p>Name: {data.name}</p>
-              <span>ID: {data._id}</span>
+              <p>Name: {product.name}</p>
+              <span>ID: {product._id}</span>
             </div>
             )
           : <p>Chargement...</p>

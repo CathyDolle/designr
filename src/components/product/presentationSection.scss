@@ -17,8 +17,15 @@
       margin-bottom: 3rem;
     }
     a {
+      display: flex;
+      align-items: center;
       color: var(--sandColor);
       font-size: 1.8rem;
+      img{
+        margin-top: 1.5px;
+        margin-left: 6px;
+        width: 15px;
+      }
     }
     &.inverse{
       padding-left: 60px;

@@ -19,11 +19,13 @@
   button{
     margin: 0 0.6rem 0 0;
   }
-  .color{
-    margin: 1rem 0.6rem 0 0;
-    width: 40px;
-    height: 15px;
-    border-radius: 2px;
-    background: blue;
+  .colorList{
+    display: flex;
+    .color{
+      margin: 1rem 0.6rem 0 0;
+      width: 40px;
+      height: 15px;
+      border-radius: 2px;
+    }
   }
 }

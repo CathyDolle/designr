@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import Wrapper from '../components/wrapper/Wrapper'
 import './inspirations.scss'
 import preview from '../assets/img/inspirations/preview.png'
 import DesignBox from '../components/inspirations/DesignBox'
 
 const Inspirations = () => {
+  const [loading, setLoading] = useState(true)
+  const [products, setproducts] = useState([])
+
+  useEffect(() => {
+    const getProducts = async () => {
+      setLoading(true);
+      
+      const response = await fetch(`http://localhost:3000/products`, {
+        // credentials: 'include', Si tu as besoin d'une auth
+        method: 'GET',
+        mode: 'cors'
+      });
+      const data = await response.json()
+
+      console.log(data)
+      setproducts(data);
+      setLoading(false);
+    };
+
+    getProducts();
+  }, []);
+
   return (
     <Wrapper>
       <div className="introContainer">
@@ -27,10 +50,11 @@ const Inspirations = () => {
         </div>
         {/* THUMBNAIL CONTAINER */}
         <div className="designContainer">
-          <DesignBox/>
-          <DesignBox/>
-          <DesignBox/>
-          <DesignBox/>
+          {
+            products.map((product, index) => {
+              return <DesignBox product={product} key={index}/>
+            })
+          }
         </div>
       </div>
     </Wrapper>

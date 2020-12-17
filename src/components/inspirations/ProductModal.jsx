@@ -10,7 +10,6 @@ function ProductModal({active, product, onClose}) {
   const toggle = () =>{
     onClose()
   }
-
   return (
     <section onClick={stop} className={active ? 'productModal active' : 'productModal'}>
       <div className="productWrapper">

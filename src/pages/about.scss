@@ -57,6 +57,7 @@
         top: 0;
         left: -25vw;
         text-align: left;
+        color: white;
       }
     }
   }
@@ -84,7 +85,7 @@
     color: var(--fontColor);
     margin-bottom: 2rem;
     cursor: pointer;
-    font-size: var(--fontSize);
+    font-size: 1.4rem;
     text-transform: uppercase;
     background: var(--sandColor);
     &.discover{

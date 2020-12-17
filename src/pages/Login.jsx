@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '../components/wrapper/Wrapper'
-import login from '../assets/img/product/bg.png'
+import deco from '../assets/img/product/bg.png'
+import github from '../assets/img/login/github.svg'
 import './login.scss'
 
 function Login(props) {
@@ -9,15 +10,16 @@ function Login(props) {
       <section className="loginSection">
         <h1>Log in</h1>
         <form action="/">
-          <label htmlFor="">Email</label>
+          {/* <label htmlFor="">Email</label> */}
           <input type="text" placeholder="First Name"/>
-          <label htmlFor="">Password</label>
+          {/* <label htmlFor="">Password</label> */}
           <input type="text" placeholder="•••••••••••"/>
         </form>
-        <button>Login</button>
-      </section>
-      <section className="visualSection">
-        <img src={login} alt="login"/>
+        <div className="buttonContainer">
+          <button className="github"><img src={github} alt="github"/>Log in with github</button>
+          <button>Login</button>
+        </div>
+        {/* <img className="deco" src={deco} alt="deco"/> */}
       </section>
     </Wrapper>
   );

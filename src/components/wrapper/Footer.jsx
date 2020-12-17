@@ -5,8 +5,8 @@ import Logo from './Logo'
 const Footer = () => {
   return (
     <footer>
-      <FooterLink exact path="/" name="Our Products"/>
-      <FooterLink path="/Inspirations" name="Collection"/>
+      <FooterLink path="/inspirations" name="Collection"/>
+      <FooterLink exact path="/about" name="About us"/>
       <FooterLink border="borderBottom" path="/Pricing" name="Pricing"/>
       <div className="demiBox left">
         <Logo/>

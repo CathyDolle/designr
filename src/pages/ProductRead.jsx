@@ -14,7 +14,7 @@ const ProductRead = () => {
     const getProduct = async () => {
       setLoading(true);
       
-      const response = await fetch(`http://localhost:3000/api/products/${name}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}products/${name}`, {
         // credentials: 'include', Si tu as besoin d'une auth
         method: 'GET',
         mode: 'cors'

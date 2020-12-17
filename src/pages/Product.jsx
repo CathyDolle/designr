@@ -25,7 +25,9 @@ const Product = () => {
         <div className="textContainer">
           <h1>A better way to <br/> create a website</h1>
           <p>DesignR is one of the best tool that any designer or developer can use.  Browse our collection, find the Mixx you like and use it for your design or website. Easily and instantly download every element of each Mixx, including: <span>images</span>, <span>typography</span> and <span>colors</span> Simple and Efficent that’s DesignR.</p>
-          <NavLink className="button" to="/inspirations">Watch our collection</NavLink>
+          <div className="buttonContainer">
+            <NavLink className="button learn" to="/inspirations">Learn more</NavLink> <NavLink className="button" to="/inscription">Get started</NavLink>
+          </div>
         </div>
         <div className="visualContainer">
           <img src={bg} alt="bg"/>
@@ -45,17 +47,17 @@ const Product = () => {
           <img src={graph} alt="graph"/>
           <p>Create a link between each member of your team around DesignR to have a remarkable result by creating the opportunity to develop your idea.</p>
         </div>
-        <PresentationSection title="Easy components, easy design." text="We use components to make the work easier. The achievements and the technique being already registered, you only have to concentrate on the creation." visual={design}/>
+        <PresentationSection title="Easy components, easy design." text="Our design is based on components which makes your work easier. The achievements and the technique being already registered, you only have to concentrate on the Implementation." visual={design}/>
         <PresentationSectionInverse title="Complete Figma 
-        UI Kit" text="DesignR® provides wonderful designs and independent and reusable components to create your own design easily." href="https://www.figma.com/file/0Ytm0IxcI48wi0kpziz6lM/Template-Guildines%2FClassy%2FPreview?node-id=0%3A1" link="Watch an exemple of our UI kit " visual={ui}/>
-         <PresentationSection title="Easy stylesheet, easy developement." text="Use our dynamic variables from our stylesheet and use it as you want, make your design development easier!" visual={dev} to="/Inspirations" link="Watch a website exemple made with our stylesheet"/>
+        UI Kit" text="DesignR® provides wonderful designs, independent and reusable components that enables you to create with no hesitation." href="https://www.figma.com/file/0Ytm0IxcI48wi0kpziz6lM/Template-Guildines%2FClassy%2FPreview?node-id=0%3A1" link="Watch an exemple of our UI kit " visual={ui}/>
+         <PresentationSection title="Easy stylesheet, easy developement." text="DesignR® provides wonderful collections, mixxes and independent and reusable stylesheets to create your own design easily." visual={dev} to="/Inspirations" link="Watch a website exemple made with our stylesheet"/>
 
          {/* INSIDE THE PRODUCT */}
          <h1 className="bigTitle">Whats inside ?</h1>
          <PresentationSectionInverse title="Typography" text={<>At DesignR we consider typography to be an <span>art</span>: it is the siment of your design because it alone is enough to give character to your creations. That's why we offer you <span>unique</span> and <span>elegant</span> typography, carefully chosen according to the graphic universe of our templates.</>} visual={typo}/>
          <PresentationSection title="Colors" text={<>Colors are the essential touches that will give <span>personality</span> to your creations. It is often considered that colors can be a reflection of your <span>sensibility</span>, so at DesignR we strive to offer you <span>harmonious colors</span> that will perfectly convey the atmosphere you wish to establish in your creations.</>}  visual={colors}/>
          <PresentationSectionInverse title="Images" text={<>The image is the final touch to your design. It is the photos that will add that <span>extra something</span> to your templates. At DesignR we use royalty-free photos taken with superior quality. <span>Unsplash</span> being the number 1 in this field, we have signed a <span>partnership</span> with them allowing you to also tap into their incredible resources.</>} visual={images}/>
-         <PresentationSection title="Get your enterprise-grade web design" text="Give an access for your team to improve their creativity and design vision. All you need to create your own vision online" visual={house} to="/Pricing" link="See plans and pricing"/>
+         <PresentationSection title="Get your enterprise-grade web design" text="Give access to your team to our wide colection and help them improve their creativity and design vision. All you need is a little creativity..." visual={house} to="/Pricing" link="See plans and pricing"/>
       </section>
 
     </Wrapper>

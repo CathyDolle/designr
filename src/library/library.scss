@@ -27,15 +27,13 @@ FONTS
 }
 
 @font-face {
-  font-family: 'MAZIUS REVIEW 20.09';
-  src: url('../assets/fonts/MAZIUSREVIEW2009-Regular.woff2') format('woff2'),
-      url('../assets/fonts/MAZIUSREVIEW2009-Regular.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+  font-family: "MAZIUS REVIEW 20.09";
+  src: url("../assets/fonts/MAZIUSREVIEW2009-Regular.woff2") format("woff2"),
+    url("../assets/fonts/MAZIUSREVIEW2009-Regular.woff") format("woff");
+  // font-weight: 100;
+  // font-style: normal;
+  // font-display: swap;
 }
-
-
 
 /******************************
 BASE
@@ -46,6 +44,7 @@ BASE
   --bgColor: #f7f4eb;
   --fontColor: black;
   --sandColor: #d8b286;
+  --sandColorHover: #bd9466;
   // font size
   --titleSize: 5.5rem;
   --subtitleSize: 4rem;
@@ -66,20 +65,22 @@ h1 {
   font-family: "MAZIUS REVIEW 20.09";
   font-size: var(--titleSize);
   color: var(--fontColor);
+  font-weight: 100;
 }
 
 h2 {
   font-family: "Neue Montreal Regular";
   font-size: var(--subtitleSize);
   color: var(--fontColor);
+  font-weight: 100;
 }
 
 h3 {
   font-family: "Neue Montreal Light";
   font-size: var(--headlineSize);
   color: var(--fontColor);
+  font-weight: 100;
 }
-
 
 a {
   font-family: "Neue Montreal Regular";
@@ -95,6 +96,3 @@ p {
   font-weight: 100;
   color: var(--fontColor);
 }
-
-
-

@@ -53,15 +53,23 @@ header {
     border-radius: 2px;
     border: solid 1px var(--sandColor);
     color: white;
+    transition: background-color 0.5s;
     a {
       color: white;
     }
     cursor: pointer;
+    &:hover{
+      background-color: var(--sandColorHover);
+    }
     &.learn {
       margin-right: 2rem;
       background: transparent;
       border: solid 1px var(--fontColor);
       color: var(--fontColor);
+      &:hover{
+        background-color: var(--fontColor);
+        color: var(--bgColor);
+      }
     }
   }
   nav a.navLink {

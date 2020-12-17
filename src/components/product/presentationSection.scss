@@ -17,10 +17,16 @@
       margin-bottom: 3rem;
     }
     a {
+      position: relative;
       display: flex;
       align-items: center;
       color: var(--sandColor);
       font-size: 1.8rem;
+      &::after{
+        position: absolute;
+        content: "";
+        border-bottom: solid thin var(--sandColor);
+      }
       img{
         margin-top: 1.5px;
         margin-left: 6px;

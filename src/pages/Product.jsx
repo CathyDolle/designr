@@ -3,6 +3,7 @@ import Wrapper from '../components/wrapper/Wrapper'
 import './product.scss'
 import PresentationSection from '../components/product/PresentationSection'
 import PresentationSectionInverse from '../components/product/PresentationSectionInverse'
+import { NavLink } from 'react-router-dom';
 // img
 import bg from '../assets/img/product/bg.png'
 import house from '../assets/img/product/house.png'
@@ -24,7 +25,7 @@ const Product = () => {
         <div className="textContainer">
           <h1>A better way to <br/> create a website</h1>
           <p>DesignR is one of the best tool that any designer or developer can use.  Browse our collection, find the Mixx you like and use it for your design or website. Easily and instantly download every element of each Mixx, including: <span>images</span>, <span>typography</span> and <span>colors</span> Simple and Efficent that’s DesignR.</p>
-          <button>Get Started</button>
+          <NavLink className="button" to="/inspirations">Watch our collection</NavLink>
         </div>
         <div className="visualContainer">
           <img src={bg} alt="bg"/>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Wrapper from '../components/wrapper/Wrapper'
-import deco from '../assets/img/product/bg.png'
 import github from '../assets/img/login/github.svg'
 import { NavLink } from 'react-router-dom';
 import './login.scss'

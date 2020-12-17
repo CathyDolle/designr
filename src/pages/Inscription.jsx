@@ -1,20 +1,9 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import Wrapper from '../components/wrapper/Wrapper'
-import login from '../assets/img/product/bg.png'
 import github from '../assets/img/login/github.svg'
 import './login.scss'
 
 function Login(props) {
-  // useEffect(() => {
-  //   const body = document.querySelector('body')
-  //   body.style.setProperty("--bgColor", "black")
-  //   body.style.setProperty("--fontColor", "white")
-
-  //   return () => {
-  //     body.style.setProperty("--bgColor", "#f7f4eb")
-  //     body.style.setProperty("--fontColor", "black")
-  //   }
-  // }, [])
   return (
     <Wrapper>
       <section className="loginSection">

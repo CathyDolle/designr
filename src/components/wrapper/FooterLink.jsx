@@ -4,10 +4,10 @@ import arrow from '../../assets/img/arrow.svg'
 
 const FooterLink = ({path, name, border}) => {
   return (
-    <div className={`footerLinkContainer ${border}`}>
-      <NavLink to={path}>{name}</NavLink>
+    <NavLink to={path} className={`footerLinkContainer ${border}`}>
+      <div className="a">{name}</div>
       <img src={arrow} alt="arrow"/>
-    </div>
+    </NavLink>
   );
 };
 

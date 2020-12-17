@@ -3,7 +3,7 @@ import './presentationSection.scss'
 import { NavLink } from 'react-router-dom';
 import linkArrow from '../../assets/img/product/linkArrow.svg'
 
-function sectionRight({text, visual, title, to, link}) {
+function sectionRight({text, visual, title, to, link, href}) {
   return (
     <section className="presentationSection">
       <div className="visualContainer inverse">
@@ -12,7 +12,8 @@ function sectionRight({text, visual, title, to, link}) {
       <div className="textContainer inverse">
         <h1>{title}</h1>
         <p>{text}</p>
-        { link && <NavLink to={to}>{link}<img src={linkArrow} alt="linkArrow"/></NavLink>}
+        {/* { link && <a href={href} target="_blank">{link}</a>} */}
+        { link && <NavLink to={to}>{link}<img src={linkArrow} alt="linkArrow"/></NavLink> && <a href={href} target="_blank">{link}</a>}}
       </div>
     </section>
   );

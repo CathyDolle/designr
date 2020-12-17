@@ -82,15 +82,16 @@
     border: solid 1px rgba(255, 255, 255, 0.5);
     outline: none;
     border-radius: 3px;
-    color: var(--fontColor);
+    color: black;
     margin-bottom: 2rem;
     cursor: pointer;
     font-size: 1.4rem;
     text-transform: uppercase;
-    background: var(--sandColor);
+    background: var(--fontColor);
     &.discover{
       background: transparent;
       margin-bottom: 250px;
+      color: var(--fontColor);
     }
   }
   h2.knowMore{

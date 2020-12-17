@@ -13,7 +13,7 @@ function sectionRight({text, visual, title, to, link, href}) {
         <h1>{title}</h1>
         <p>{text}</p>
         {/* { link && <a href={href} target="_blank">{link}</a>} */}
-        { link && <NavLink to={to}>{link}<img src={linkArrow} alt="linkArrow"/></NavLink> && <a href={href} target="_blank">{link}<img src={linkArrow} alt="linkArrow"/></a>}}
+        { link && <NavLink to={to}>{link}<img src={linkArrow} alt="linkArrow"/></NavLink> && <a href={href} target="_blank" rel="noreferrer">{link}<img src={linkArrow} alt="linkArrow"/></a>}
       </div>
     </section>
   );

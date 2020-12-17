@@ -40,6 +40,10 @@
   p{
     color: white;
   }
+  img.plan{
+    width: 100%;
+    margin-top: 8rem;
+  }
 }
 
 .offerSection{
@@ -47,5 +51,6 @@
   display: flex;
   justify-content: space-around;
   margin-top: 8rem;
+  margin-bottom: 20rem;
   padding-right: 100px;
 }

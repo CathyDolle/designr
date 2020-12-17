@@ -3,6 +3,7 @@ import Wrapper from '../components/wrapper/Wrapper'
 import PriceBox from '../components/pricing/PriceBox'
 import './pricing.scss'
 import OfferSection from '../components/pricing/OfferSection'
+import plan from '../assets/img/pricing/plan.svg'
 
 // img
 import galleryIcon from '../assets/img/pricing/gallery.svg'
@@ -19,11 +20,11 @@ const Pricing = () => {
           <button>Year</button>
         </div>
         <div className="priceSection">
-          <PriceBox title="Students" price="$6" text="Web design and web development Students ?
-          Get complets Figma UI kit and React composants to easy create your website. "/>
-          <PriceBox title="Designers" price="$16" text="Design whatever you want with complets Figma kit UI. Create easily wedb, mobile and print designs."/>
-          <PriceBox title="Developers" price="$24" text="No inspiration for the design of your web site? Get React components and create an inspiring website  easily."/>
-          <PriceBox title="Enterprises" price="$49" text="Be free in website creation. Easy get inspiration  for design and quickly compose inspiring websites."/>
+          <PriceBox title="Test it first!" price="Free" text="Wanna test our collection once ? 
+          Get access to our royalty-free images, a typo and an exclusive color palette."/>
+          <PriceBox title="Standard" price="$15" duration="month" promotion="- 5$ for students" text="Web designer or developer?
+          Get the complete Figma UI kit and React composants to easily create your website. "/>
+          <PriceBox title="Businesses" price="$49" duration="month" promotion="+ 5$/employee" text="Experience our entire collection without being limited ! Get access to full font families and to 30 images per project"/>
         </div>
       </div>
       {/* wave */}
@@ -36,6 +37,8 @@ const Pricing = () => {
           <OfferSection logo={profilIcon} title={<>Made for developpers <br/>& designers</>} offerName1="Complete Figma UI Kit" offerName2="React library" offerName3="Reusable components" /> 
           <OfferSection logo={timingIcon} title={<>Optimize your <br/> time</>} offerName1="Available 24/7" offerName2="Fast & reliable" offerName3="Quality documents" />
         </div>
+        <span>Compare Plan</span>
+        <img className="plan" src={plan} alt="plan"/>
       </section>
     </Wrapper>
   );

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './designBox.scss'
+import ProductModal from './ProductModal'
 
 const DesignBox = ({product}) => {
+  const [open, setOpen] = useState(false)
+
   return (
-    <div className="designBox">
-      <img src={process.env.REACT_APP_API_URL + product.thumbnail} alt=""/>
+    <div className="designBox" onClick={() => setOpen(!open)}>
+      <img src={product.thumbnail} alt="thumbnail"/>
       <h2>{product.name}</h2>
       <div className="tagList">
         <button className="tag active">{product.category}</button>
@@ -16,6 +19,7 @@ const DesignBox = ({product}) => {
           })
         }
       </div>
+      <ProductModal active={open} product={product} onClose={() => setOpen(false)}/>
     </div>
   );
 };

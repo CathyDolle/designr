@@ -24,9 +24,6 @@ INTRO
       border-radius: 4px;
       font-size: 1.6rem;
     }
-    p span{
-      color: var(--sandColor);
-    }
   }
   .visualContainer {
     position: relative;
@@ -55,10 +52,12 @@ PRESENTATION
   padding: 0 calc(var(--marginPadding) * 2.5);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 30rem;
   p{
-    width: 25%;
+    width: 20%;
     color: white;
+    margin-left: -8rem
   }
 }
 
@@ -67,4 +66,8 @@ h1.bigTitle{
   padding-bottom: 20rem;
   color: white;
   text-align: center;
+}
+
+p span{
+  color: var(--sandColor);
 }

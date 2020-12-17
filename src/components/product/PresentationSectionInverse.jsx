@@ -12,7 +12,7 @@ function sectionRight({text, visual, title, to, link}) {
       <div className="textContainer inverse">
         <h1>{title}</h1>
         <p>{text}</p>
-        { link && <NavLink to={to}>{link}{ link && <NavLink to={to}>{link} <img src={linkArrow} alt="linkArrow"/></NavLink>}</NavLink>}
+        { link && <NavLink to={to}>{link}<img src={linkArrow} alt="linkArrow"/></NavLink>}
       </div>
     </section>
   );

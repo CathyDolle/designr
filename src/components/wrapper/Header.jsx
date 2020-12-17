@@ -8,11 +8,11 @@ const Header = () => {
     <header>
       <Logo/>
       <nav>
-        <NavLink className="navLink" to="/Inspirations">Collection</NavLink>
-        <NavLink className="navLink" to="/Pricing">About us</NavLink>
-        <NavLink className="navLink" to="/Pricing">Pricing</NavLink>
+        <NavLink className="navLink" to="/inspirations">Collection</NavLink>
+        <NavLink className="navLink" to="/about">About us</NavLink>
+        <NavLink className="navLink" to="/pricing">Pricing</NavLink>
         <NavLink className="navLink" to="/login">Login</NavLink>
-        <button className="learn">Learn more</button>
+        <button className="learn">Documentation</button>
         <button><NavLink to="/inscription">Get started</NavLink></button>
       </nav>
     </header>

@@ -45,7 +45,7 @@ BASE
   // colors
   --bgColor: #f7f4eb;
   --fontColor: black;
-  --sandColor: #C8B28B;
+  --sandColor: #d8b286;
   // font size
   --titleSize: 5.5rem;
   --subtitleSize: 4rem;
@@ -65,16 +65,19 @@ TYPOGRAPHY
 h1 {
   font-family: "MAZIUS REVIEW 20.09";
   font-size: var(--titleSize);
+  color: var(--fontColor);
 }
 
 h2 {
   font-family: "Neue Montreal Regular";
   font-size: var(--subtitleSize);
+  color: var(--fontColor);
 }
 
 h3 {
   font-family: "Neue Montreal Light";
   font-size: var(--headlineSize);
+  color: var(--fontColor);
 }
 
 
@@ -90,6 +93,7 @@ p {
   font-size: var(--fontSize);
   line-height: 2.6rem;
   font-weight: 100;
+  color: var(--fontColor);
 }
 
 

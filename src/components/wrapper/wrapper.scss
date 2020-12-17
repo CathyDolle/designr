@@ -14,6 +14,7 @@ html {
 
 body {
   background: var(--bgColor);
+  transition: background-color 0.5s;
 }
 
 /******************************
@@ -33,9 +34,12 @@ header {
     display: flex;
     align-items: center;
   }
-  img {
+  svg {
     left: var(--marginPadding);
     height: 50px;
+    .svgFill {
+      fill: var(--fontColor);
+    }
   }
   span {
     font-size: 0.5rem;
@@ -54,7 +58,7 @@ header {
     &.learn {
       margin-right: 2rem;
       background: transparent;
-      border: solid 1px black;
+      border: solid 1px var(--fontColor);
       color: var(--fontColor);
     }
   }
@@ -109,9 +113,9 @@ FOOTER
   padding: 0 var(--marginPadding);
   width: 100%;
   height: 155px;
-  border-top: solid thin black;
+  border-top: solid thin var(--fontColor);
   &.borderBottom {
-    border-bottom: solid thin black;
+    border-bottom: solid thin var(--fontColor);
   }
   img {
     width: 60px;
@@ -130,17 +134,22 @@ footer {
     width: 50%;
     height: 300px;
     padding: var(--marginPadding);
-    img {
+    svg {
+      left: var(--marginPadding);
       width: 300px;
+      .svgFill {
+        fill: var(--fontColor);
+      }
     }
     &.left {
-      border-right: solid thin black;
+      border-right: solid thin var(--fontColor);
     }
     p.copyright {
       position: absolute;
       bottom: 2rem;
       right: 2rem;
       font-size: 1.2rem;
+      color: var(--fontColor);
     }
   }
 }

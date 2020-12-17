@@ -8,6 +8,13 @@ import DesignBox from '../components/inspirations/DesignBox'
 const Inspirations = () => {
   const [loading, setLoading] = useState(true)
   const [products, setproducts] = useState([])
+  const [category, setCategory] = useState("All")
+  const categories = [
+    "All",
+    "Web design",
+    "Mobile",
+    "Print",
+  ]
 
   useEffect(() => {
     const getProducts = async () => {
@@ -20,6 +27,7 @@ const Inspirations = () => {
       });
       const data = await response.json()
 
+      console.log(response)
       console.log(data)
       setproducts(data);
       setLoading(false);
@@ -40,18 +48,16 @@ const Inspirations = () => {
       <div className="mainContainer">
         <h2>Our Top Picks</h2>
         <div className="tagContainer">
-          <button className="tag active">All</button>
-          <span>•</span>
-          <button className="tag">Web Design</button>
-          <span>•</span>
-          <button className="tag">Print</button>
-          <span>•</span>
-          <button className="tag">Mobile</button>
+          {
+            categories.map((tag, index) => {
+              return <button onClick={() => setCategory(tag)} className={`tag ${category === tag ? "active" : ''}`} key={index}>{tag}</button>
+            })
+          }
         </div>
         {/* THUMBNAIL CONTAINER */}
         <div className="designContainer">
           {
-            products.map((product, index) => {
+            products.filter(product => product.category === category || category === "All").map((product, index) => {
               return <DesignBox product={product} key={index}/>
             })
           }

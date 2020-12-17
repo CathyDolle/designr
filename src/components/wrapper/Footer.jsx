@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterLink from './FooterLink'
-import logo from '../../assets/img/logo.svg'
+import Logo from './Logo'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
       <FooterLink path="/Inspirations" name="Collection"/>
       <FooterLink border="borderBottom" path="/Pricing" name="Pricing"/>
       <div className="demiBox left">
-        <img src={logo} alt="logo"/>
+        <Logo/>
       </div>
       <div className="demiBox">
         <p>Discover our best Picks and Inspirations that will help you design and  develope your Next Projects. Cool fonts, great palletes and amazing imagary all in one place. Enjoy ;)</p>

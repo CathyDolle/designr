@@ -1,0 +1,99 @@
+.aboutSection {
+  width: 100%;
+  height: auto;
+  padding: var(--marginPadding);
+  .aboutContent {
+    position: relative;
+    padding-top: var(--marginPadding);
+    padding-left: var(--marginPadding);
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // background: red;
+    p {
+      margin-top: 2rem;
+      width: 20%;
+    }
+    img {
+      position: absolute;
+      right: 0;
+      z-index: -1;
+      bottom: -20vh;
+    }
+    width: 100%;
+  }
+  .missionContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .verticalLine {
+      margin-bottom: 100px;
+      height: 200px;
+      width: 2px;
+      background: var(--fontColor);
+    }
+    img{
+      position: absolute;
+      right: 0;
+      &.access{
+        top: 90vh;
+        // transform: translate3d(0, 0, 0);
+        left: 80px;
+      }
+    }
+    p {
+      margin-bottom: 10rem;
+    }
+    p.desc {
+      width: 300px;
+      position: relative;
+      text-align: left;
+      margin-bottom: 8rem;
+      span {
+        position: absolute;
+        top: 0;
+        left: -25vw;
+        text-align: left;
+      }
+    }
+  }
+  h1,
+  h2 {
+    font-family: "MAZIUS REVIEW 20.09";
+    font-size: 6rem;
+  }
+  h2 {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+  span {
+    color: var(--sandColor);
+  }
+  img{
+    z-index: -1;
+  }
+  button{
+    width: 300px;
+    height: 50px;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 3px;
+    color: var(--fontColor);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-size: var(--fontSize);
+    text-transform: uppercase;
+    background: var(--sandColor);
+    &.discover{
+      background: transparent;
+      margin-bottom: 250px;
+    }
+  }
+  h2.knowMore{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+}

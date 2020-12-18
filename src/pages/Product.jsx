@@ -50,7 +50,7 @@ const Product = () => {
         <PresentationSection title="Easy components, easy design." text="Our design is based on components which makes your work easier. The achievements and the technique being already registered, you only have to concentrate on the Implementation." visual={design}/>
         <PresentationSectionInverse title="Complete Figma 
         UI Kit" text="DesignR® provides wonderful designs, independent and reusable components that enables you to create with no hesitation." href="https://www.figma.com/file/0Ytm0IxcI48wi0kpziz6lM/Template-Guildines%2FClassy%2FPreview?node-id=0%3A1" link="Watch an exemple of our UI kit " visual={ui}/>
-         <PresentationSection title="Easy stylesheet, easy developement." text="DesignR® provides wonderful collections, mixxes and independent and reusable stylesheets to create your own design easily." visual={dev} href="https://www.figma.com/file/0Ytm0IxcI48wi0kpziz6lM/Template-Guildines%2FClassy%2FPreview?node-id=0%3A1" link="Watch a website exemple made with our stylesheet"/>
+         <PresentationSection title="Easy stylesheet, easy developement." text="DesignR® provides wonderful collections, mixxes and independent and reusable stylesheets to create your own design easily." visual={dev} href="https://designr-classy.web.app/" link="Watch a website exemple made with our stylesheet"/>
 
          {/* INSIDE THE PRODUCT */}
          <h1 className="bigTitle">Whats inside ?</h1>
